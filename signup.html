@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Create account · ChatRIX</title><link rel="stylesheet" href="styles.css"></head>
+<body><main class="auth-wrap"><section class="auth-card">
+<div class="brand-row"><div class="brand-mark">C</div><div class="brand">Chat<span>RIX</span></div></div>
+<h1>Create your account</h1><p class="intro">Your people, your conversations, all in one place.</p>
+<form id="signupForm">
+<div class="field"><label for="name">Display name</label><input id="name" autocomplete="name" required maxlength="40" placeholder="e.g. Saad"></div>
+<div class="field"><label for="username">Username</label><input id="username" autocomplete="username" required minlength="3" maxlength="20" pattern="[A-Za-z0-9_]+" placeholder="e.g. saad_coder"><span class="small muted">3–20 characters: letters, numbers, underscore.</span></div>
+<div class="field"><label for="email">Email address</label><input id="email" type="email" autocomplete="email" required placeholder="you@example.com"></div>
+<div class="field"><label for="password">Password</label><input id="password" type="password" autocomplete="new-password" required minlength="6" placeholder="At least 6 characters"></div>
+<button class="btn" id="signupBtn" type="submit">Create ChatRIX account</button><div class="notice" id="notice" role="status"></div>
+</form><div class="auth-foot">Already have an account? <a href="login.html">Sign in</a></div>
+</section></main><script type="module" src="auth.js"></script></body></html>

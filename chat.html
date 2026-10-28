@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ChatRIX · Messages</title><link rel="stylesheet" href="styles.css"></head>
+<body><main class="app-shell"><div class="messenger" id="messenger">
+<aside class="sidebar">
+  <header class="side-head">
+    <div class="side-head-top"><div class="brand">Chat<span>RIX</span></div><button class="icon-btn" title="New conversation" aria-label="New conversation" onclick="document.getElementById('search').focus()">＋</button></div>
+    <div class="search-wrap"><span class="search-icon">⌕</span><input id="search" type="search" placeholder="Search username…" autocomplete="off" aria-label="Search users"></div>
+  </header>
+  <div class="side-label">Search results</div><div id="searchNote" class="search-note">Search by username</div><div id="searchResults" class="user-results"></div>
+  <div class="side-label">Recent chats</div><div id="recentChats" class="user-results"></div>
+  <footer class="side-foot"><div class="avatar" id="myAvatar">U</div><div class="user-info"><div class="user-name" id="myName">Loading…</div><div class="user-handle" id="myHandle"></div></div><button class="btn ghost" id="logout">Log out</button></footer>
+</aside>
+<section class="chat-panel">
+  <header class="chat-head"><button class="icon-btn mobile-back" id="backBtn" aria-label="Back">‹</button><div class="avatar" id="chatAvatar">C</div><div class="user-info"><div class="user-name" id="chatTitle">Welcome to ChatRIX</div><div class="user-handle" id="chatSubtitle">Your conversations, together</div></div><div class="chat-head-actions"><button class="icon-btn" title="Conversation info" aria-label="Conversation info">ⓘ</button></div></header>
+  <div class="chat-scroll" id="messages"><div class="empty-state" id="welcome"><div class="empty-icon">✦</div><h2>Your space to connect.</h2><p>Search for a username on the left, select a person, and send your first message.</p></div></div>
+  <div class="composer-area hidden" id="composerArea"><form class="composer" id="messageForm"><label class="icon-btn" for="imageInput" title="Send image" style="display:grid;place-items:center">＋</label><input id="imageInput" type="file" accept="image/jpeg,image/png,image/webp,image/gif" hidden><input id="messageInput" type="text" maxlength="3000" placeholder="Write a message…" autocomplete="off" aria-label="Message"><button class="btn" id="sendBtn" type="submit">Send ↗</button></form><div class="composer-hint">Enter to send · Images up to 5 MB</div><div id="status" class="status" role="status"></div></div>
+</section></div></main><script type="module" src="chat.js"></script></body></html>
