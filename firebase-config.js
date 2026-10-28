@@ -5,12 +5,13 @@ import { getAuth } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-aut
 import { getFirestore } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js";
 
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT_ID.firebasestorage.app",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyA1_hSc1EzR8LZzMTpcvnRvLsJyfeXzvbc",
+  authDomain: "chatrix-b1173.firebaseapp.com",
+  projectId: "chatrix-b1173",
+  storageBucket: "chatrix-b1173.firebasestorage.app",
+  messagingSenderId: "550224627068",
+  appId: "1:550224627068:web:c8a306172861e9054050f9",
+  measurementId: "G-BP4HJ81YTR"
 };
 
 const app = initializeApp(firebaseConfig);
